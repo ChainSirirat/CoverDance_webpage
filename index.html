@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://peckkie.github.io/Concealed_Gun_webpage/ -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cover Dance Webpage</title>
+    <link rel="icon" type="image/png" href="./files/data.PNG" />
+    <link rel="stylesheet" href="./files/font-awesome.min.css" />
+    <link rel="stylesheet" href="./files/codemirror.min.css" />
+    <link rel="stylesheet" href="./files/app.css" />
+    <link rel="stylesheet" href="./files/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                Cover Dance Evaluation Algorithm <br>
+                using 2D Skeleton Analysis <br>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://github.com/siri737">
+                            Sirirat Cha-in
+                        </a>
+                    </li>
+                    <li>
+                        <a> Pakinee Kriamthsisong </a>
+                    </li>
+                    <li>
+                        <a href="https://vi-lab-th.github.io/"> Thanapong Intharah </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://drive.google.com/file/d/12iUDHsHB0Ito480scEQ1_Qd1XJk1S_7n/view?usp=sharing">
+                            <img src="./files/report.PNG" height="120px" /><br>
+                            <h4><strong>Report</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/drive/folders/1cNMt6eOOexJZBYPW_6CL7VFeK8hPamoh?usp=sharing">
+                            <img src="./files/data.PNG" height="120px" /><br>
+                            <h4><strong>Dataset</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/siri737/Cover-Dance">
+                            <img src="./files/code.PNG" height="120px" /><br>
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Example Results: Webpage(Prototype)</h3>
+                <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                    <source src="./files/RunProgram.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Abstract</h3>
+                <img src="./files/pro1.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    <p>&emsp;&emsp;&emsp;Nowadays, cover dancing is a dance that has received 
+                    a lot of attention from society. Because it is a dance that imitates 
+                    the choreography from their favorite artist And can also be used 
+                    to compete in competitions. But currently there is no system that 
+                    allows accurate dance scores. For this reason, the researcher developed
+                    an algorithm to detect the similarities between human dance posture 
+                    in the original video and mimic video and develop dance data sets
+                    (Video Dataset) That is the dance of a person to use in testing the algorithm.
+                    </p>
+                    <p>&emsp;&emsp;&emsp;In this research, OpenPose is used to analyze
+                        the position of important points in the human body in 18 important
+                        clips by using COCO Output. Format to sort the points. And using the
+                        Dynamic Time Warping algorithm. For analyzing the resemblance 
+                        of the choreography of people in the original clip and the clip 
+                        in imitation, Including learning to convert points from the created data set.
+                        The developed data set contains 400 clips.</p>  
+                    <p>&emsp;&emsp;&emsp;The developed algorithm developed into the Cover Dance Evaluation API for
+                        others to be able to use. The results of the consistency testing of 
+                        choreographic simulation data obtained from experts. Inexperienced And
+                        from the algorithm It can be concluded that the choreography scoring scores 
+                        from the algorithm are inconsistent with and inexperienced. 
+                        Due to the small video clip being seen, some dance details are missing or unclea.</p>
+                </p>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Example Video Dancing from algorithm openpose</h3>
+                <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                    <source src="./files/01E1C5.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <br>
+                The website template was borrowed from
+                <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
